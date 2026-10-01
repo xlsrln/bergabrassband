@@ -11,6 +11,10 @@
   <link rel="icon" type="image/x-icon" href="favicon-32x32.png">
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       background-color: black;
@@ -20,27 +24,37 @@
       font-family: Arial, sans-serif;
     }
 
-    .content {
+    /*
+      The two logo images stay outside the white box,
+      so they appear on the black background.
+    */
+    .site-header {
       max-width: 650px;
-      margin: 40px auto;
-      padding: 30px 35px;
-      box-sizing: border-box;
-      background-color: white;
-      border-radius: 18px;
-      text-align: left;
-      line-height: 1.5;
-    }
-
-    .logo {
+      margin: 30px auto 20px;
+      padding: 0 20px;
       text-align: center;
     }
 
-    .logo img {
+    .site-header img {
+      display: block;
       max-width: 100%;
       height: auto;
-      margin-bottom: 10px;
+      margin: 0 auto 10px;
     }
 
+    /*
+      Only the text is inside the white rounded box.
+    */
+    .content {
+      max-width: 650px;
+      margin: 0 auto 40px;
+      padding: 30px 35px;
+      background-color: white;
+      border-radius: 18px;
+      line-height: 1.5;
+    }
+
+    h1,
     h2,
     h3,
     h4 {
@@ -48,8 +62,9 @@
       font-family: "Comic Sans MS", cursive, sans-serif;
     }
 
-    h2 {
-      margin-top: 30px;
+    h3 {
+      margin-top: 10px;
+      margin-bottom: 20px;
     }
 
     p,
@@ -62,8 +77,13 @@
     }
 
     @media (max-width: 600px) {
+      .site-header {
+        margin-top: 20px;
+        padding: 0 12px;
+      }
+
       .content {
-        margin: 20px 12px;
+        margin: 0 12px 25px;
         padding: 22px 20px;
         border-radius: 14px;
       }
@@ -72,25 +92,24 @@
 </head>
 
 <body>
+
+  <header class="site-header">
+    <img
+      src="images/bbb.png"
+      width="120"
+      height="139"
+      alt="Berga Brassband logo"
+    >
+
+    <img
+      src="images/BBBtext.png"
+      width="320"
+      height="72"
+      alt="Berga Brassband"
+    >
+  </header>
+
   <main class="content">
-
-    <div class="logo">
-      <img
-        src="images/bbb.png"
-        width="120"
-        height="139"
-        alt="Berga Brassband logo"
-      >
-
-      <br>
-
-      <img
-        src="images/BBBtext.png"
-        width="320"
-        height="72"
-        alt="Berga Brassband"
-      >
-    </div>
 
     <h3>Om oss</h3>
 
@@ -130,15 +149,24 @@
         Ett rum eller en övervakad plats att lägga instrumentfodral
         och notställsväskor.
       </li>
-      <li>En yta hos er på cirka 3 × 3 meter för kvintett.</li>
-      <li>Stolar.</li>
+
+      <li>
+        En yta hos er på cirka 3 × 3 meter för kvintett.
+      </li>
+
+      <li>
+        Stolar.
+      </li>
     </ul>
 
     <p lang="sv">
-      Låter det intressant? Kontakta oss på
-      <a href="mailto:info@bergabrass.se">info@bergabrass.se</a>
+      Låter det intressant?
+      <a href="mailto:info@bergabrass.se">
+        Kontakta oss på info@bergabrass.se
+      </a>
     </p>
 
   </main>
+
 </body>
 </html>
