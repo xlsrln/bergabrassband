@@ -13,7 +13,7 @@
   <style>
     body {
       margin: 0;
-      background-color: white;
+      background-color: black;
       background-image: url("images/bg2.png");
       background-repeat: repeat;
       color: black;
@@ -22,9 +22,13 @@
 
     .content {
       max-width: 650px;
-      margin: 30px auto;
-      padding: 0 20px;
+      margin: 40px auto;
+      padding: 30px 35px;
+      box-sizing: border-box;
+      background-color: white;
+      border-radius: 18px;
       text-align: left;
+      line-height: 1.5;
     }
 
     .logo {
@@ -56,6 +60,14 @@
     a {
       color: black;
     }
+
+    @media (max-width: 600px) {
+      .content {
+        margin: 20px 12px;
+        padding: 22px 20px;
+        border-radius: 14px;
+      }
+    }
   </style>
 </head>
 
@@ -63,20 +75,33 @@
   <main class="content">
 
     <div class="logo">
-      <img src="images/bbb.png" width="120" height="139" alt="Berga Brassband logo">
+      <img
+        src="images/bbb.png"
+        width="120"
+        height="139"
+        alt="Berga Brassband logo"
+      >
+
       <br>
-      <img src="images/BBBtext.png" width="320" height="72" alt="Berga Brassband">
+
+      <img
+        src="images/BBBtext.png"
+        width="320"
+        height="72"
+        alt="Berga Brassband"
+      >
     </div>
 
-    <h3>Berga brassband</h3>
+    <h3>Om oss</h3>
 
     <p lang="sv">
-      Vi är en brassensemble i Stockholm grundad 1993 i Åkersberga. Läs mer om vår historia
-      <a href="historik.html">här</a>
+      Vi är en brassensemble i Stockholm grundad 1993 i Åkersberga.
+      Vi brinner för levande ensemblemusik, framförd med bleckblåsinstrument.
+      Läs mer om vår historia
+      <a href="historik.html">här</a>.
     </p>
 
-
-    <h3>Hyra BBB för Musik</h3>
+    <h3>Hyr BBB för ditt event</h3>
 
     <p lang="sv">
       Vill ni ha en orkester som spelar hos er? Något som sticker ut ur
@@ -97,16 +122,22 @@
     </p>
 
     <p lang="sv">
-      Det som behövs från er sida för att vi ska kunna genomföra är:
+      Det som behövs från er sida för att vi ska kunna spela hos er är:
     </p>
 
     <ul>
-      <li>Ett rum eller en övervakad plats att lägga instrumentfodral och notställsväskor.</li>
+      <li>
+        Ett rum eller en övervakad plats att lägga instrumentfodral
+        och notställsväskor.
+      </li>
       <li>En yta hos er på cirka 3 × 3 meter för kvintett.</li>
       <li>Stolar.</li>
     </ul>
 
-
+    <p lang="sv">
+      Låter det intressant? Kontakta oss på
+      <a href="mailto:info@bergabrass.se">info@bergabrass.se</a>
+    </p>
 
   </main>
 </body>
